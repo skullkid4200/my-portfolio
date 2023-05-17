@@ -1,7 +1,17 @@
 import React from "react";
 import Navbar from "./components/NavBar/index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./components/pages/About";
+import Art from "./components/pages/Art";
+import Coding from "./components/pages/Coding";
+import Contact from "./components/pages/Contact";
+import Game from "./components/pages/Game";
 import Home from "./components/pages/Home";
+import Twinbeds from "./components/pages/Twinbeds";
+import Warhammer from "./components/pages/Warhammer";
+import Writings from "./components/pages/Writings";
+
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -40,6 +50,14 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" exact element={<Home />} />
+            <Route path="/about" exact element={<About />} />
+            <Route path="/art" exact element={<Art />} />
+            <Route path="/coding" exact element={<Coding />} />
+            <Route path="/contact" exact element={<Contact />} />
+            <Route path="/twinbeds" exact element={<Twinbeds />} />
+            <Route path="/warhammer" exact element={<Warhammer />} />
+            <Route path="/writings" exact element={<Writings />} />
+            <Route path="/game" exact element={<Game />} />
           </Routes>
       </Router>
     </ApolloProvider>
