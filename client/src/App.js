@@ -5,7 +5,6 @@ import About from "./components/pages/About";
 import Art from "./components/pages/Art";
 import Coding from "./components/pages/Coding";
 import Contact from "./components/pages/Contact";
-import Game from "./components/pages/Game";
 import Home from "./components/pages/Home";
 import Twinbeds from "./components/pages/Twinbeds";
 import Warhammer from "./components/pages/Warhammer";
@@ -57,7 +56,6 @@ function App() {
             <Route path="/twinbeds" exact element={<Twinbeds />} />
             <Route path="/warhammer" exact element={<Warhammer />} />
             <Route path="/writings" exact element={<Writings />} />
-            <Route path="/game" exact element={<Game />} />
           </Routes>
       </Router>
     </ApolloProvider>
