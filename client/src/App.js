@@ -11,6 +11,7 @@ import Warhammer from "./components/pages/Warhammer";
 import Writings from "./components/pages/Writings";
 
 
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -47,6 +48,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
           <Navbar />
+          
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/about" exact element={<About />} />
