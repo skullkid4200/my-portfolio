@@ -1,76 +1,124 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
-  Nav,
   NavLink,
-  Bars,
   NavMenu
 } from './Navbarelements.js';
 
 const Navbar = () => {
-
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
-
-  function toggleMenu() {
-    if (menu.classList.contains("showMenu")) {
-      menu.classList.remove("showMenu");
-      closeIcon.style.display = "none";
-      menuIcon.style.display = "block";
-    } else {
-      menu.classList.add("showMenu");
-      closeIcon.style.display = "block";
-      menuIcon.style.display = "none";
-    }
-  }
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
+    
+      
+      <div className ="flex justify-center h-20 bg-[#2F4550] ">
+        <div className="flex items-center justify-between py-8">
+      
+      <nav>
+        <section className="MOBILE-MENU flex lg:hidden">
+          <div
+            className="HAMBURGER-ICON space-y-2 cursor-pointer"
+            onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
+          >
+            <span className="block h-0.5 w-8 bg-gray-800"></span>
+            <span className="block h-0.5 w-8 bg-gray-800"></span>
+            <span className="block h-0.5 w-8 bg-gray-800"></span>
+          </div>
 
-    <div>
-      <Nav>
-
-        
-        <Bars className="hamburger" onClick={toggleMenu}>
-          <i className = "menuIcon material-icons">menu</i>
-          <i className = "closeIcon material-icons">close</i>
-        </Bars>
-        
-        
-          
-
-
-        <NavMenu className="menu">
-          <>
-            <NavLink className="menuItem" to='/' activestyle="true">
+          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+            <div
+              className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
+              onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
+            >
+              <svg
+                className="h-8 w-8 text-gray-600 cursor-pointer"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </div>
+            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/home">Home</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/coding">Coding</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/twinbeds">Twin Beds</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/art">Art</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/writings">Writings</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/warhammer">WARHAMMER 40k</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/about">About</a>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <a href="/contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </nav>
+      <style>{`
+      .hideMenuNav {
+        display: none;
+      }
+      .showMenuNav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    `}</style>
+    </div>
+        <NavMenu>
+            <NavLink to='/' activestyle="true">
               Home
             </NavLink>
-            <NavLink className="menuItem" to='/coding' activestyle="true">
+            <NavLink to='/coding' activestyle="true">
               Coding
             </NavLink>
-            <NavLink className="menuItem" to='/twinbeds' activestyle="true">
+            <NavLink to='/twinbeds' activestyle="true">
               Twin Beds
             </NavLink>
-            <NavLink className="menuItem" to='/art' activestyle="true">
+            <NavLink to='/art' activestyle="true">
               Art
             </NavLink>
-            <NavLink className="menuItem" to='/writings' activestyle="true">
+            <NavLink to='/writings' activestyle="true">
               Writings
             </NavLink>
-            <NavLink className="menuItem" to='/warhammer' activestyle="true">
-              Warhammer 40k
+            <NavLink to='/warhammer' activestyle="true">
+              WARHAMMER 40k
             </NavLink>
-            <NavLink className="menuItem" to='/about' activestyle="true">
+            <NavLink to='/about' activestyle="true">
               About
             </NavLink>
-            <NavLink className="menuItem" to='/contact' activestyle="true">
+            <NavLink to='/contact' activestyle="true">
               Contact Me
             </NavLink>
-          </>
         </NavMenu>
-      </Nav>
-    </div>
+      </div>
+    
   );
 };
 
