@@ -7,9 +7,9 @@ const Home = () => {
         <div className = "relative px-4 sm:px-8 lg:px-12">
           <div className ="flex mx-auto max-w-2xl lg:max-w-5x1">
             <div className = "max-w-2x1">
-                <div className="columns-2 flex gap-8 justify-center">
-                <div className="transition-opacity rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">
-                <a aria-label="Home" className=""  href="https://github.com/skullkid4200">
+                <div className="flex-none columns-2 flex gap-8 justify-center">
+                <div className="flex-none">
+                <a aria-label="Home" className="flex-none"  href="https://github.com/skullkid4200">
                 <img src="https://avatars.githubusercontent.com/u/116686625?s=400&v=4" width="512" height="512" alt="Skeleton Avatar" className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"></img>
                 </a>
                 </div>
@@ -21,18 +21,23 @@ const Home = () => {
 <p className ="flex pt-6"> 
 Hey! My name’s Jack. My journalism degree and time spent managing a touring music act has made me well-versed 
 in audio and video production, in addition to other strong skills including public relations, copy writing, and graphic design. 
+</p>
+<p className="flex pt-5">
+After the pandemic demonstrated that live music is not the safest career in the world, I pivoted to studying computer science and began my journey to become a full-stack developer. Through UPenn's EDX Web Developer bootcamp I have developed many strong technical skills including, 
+but not limited to, HTML, CSS, JavaScript, Git, SQL, MongoDB, Node, and React.
+</p>
+ 
+<h2 className ="pt-5"></h2>
 I like to think I've diversified my background to the point that I can take on really any challenge in any industry space, 
 be it design, technical back-end, client support, or something else entirely. Please reach out if you'd like to connect over 
-anything!</p> 
-<h2 className ="pt-5">After the pandemic demonstrated that live music is not the safest career in the world, I pivoted to studying computer science and began my journey to become a full-stack developer. Through UPenn's EDX Web Developer bootcamp I have developed many strong technical skills including, 
-but not limited to, HTML, CSS, JavaScript, Git, SQL, MongoDB, Node, and React.</h2>
-<h2 className="pt-5">
+anything!
+<h2 className="pt-5 italic">
 Jack grew up outside of Philadelphia, PA and graduated from Temple University in 2017 with a BA in Journalism. 
 A modern communications curriculum revolving around sharp writing and an ever-changing digital landscape has 
 rounded out Jack’s creative pursuits with a tech-savvy and media-fluent skillset that transcends the borders 
 between virtually all mediums.
 </h2> 
-              <div className ="mt-6 flex gap-20 justify-center">
+              <div className ="mt-2 flex gap-20 justify-center">
                 <a className ="group -m-1 p-1" ari-label="Follow on Instagram" href="https://www.instagram.com/skull_kid_design/">
                   <svg viewBox="0 0 24 24" ari-hidden="true" className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-700 dark:group-hover:fill-zinc-400">
                     <path d="M12 3c-2.444 0-2.75.01-3.71.054-.959.044-1.613.196-2.185.418A4.412 4.412 0 0 0 4.51 4.511c-.5.5-.809 1.002-1.039 1.594-.222.572-.374 1.226-.418 2.184C3.01 9.25 
