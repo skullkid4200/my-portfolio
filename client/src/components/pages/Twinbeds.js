@@ -3,16 +3,16 @@ import React from 'react';
 const Twinbeds = () => {
     return (
       <div className="sm:px-8 mt-9">
-    <div className = "mx-auto-max-w-7xl lg-px-8">
-      <div className = "relative px-4 sm:px-8 lg:px-12">
-        <div className ="flex mx-auto max-w-2xl lg:max-w-5x1">
-          <div className = "max-w-2x1">
+      <div className="mx-auto-max-w-7xl lg-px-8">
+        <div className="relative px-4 sm:px-8 lg:px-12">
+          <div className="flex mx-auto max-w-2xl lg:max-w-5x1">
+            <div className="max-w-2x1">
               <div className="columns-2 flex gap-8 justify-center">
-              <div className="">
-              <a aria-label="Home" className=""  href="https://github.com/skullkid4200">
-              <img src="https://avatars.githubusercontent.com/u/116686625?s=400&v=4" width="512" height="512" alt="Skeleton Avatar" className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"></img>
-              </a>
-              </div>
+                <div className="flex-none">
+                  <a aria-label="Home" className="" href="https://github.com/skullkid4200">
+                    <img src="https://avatars.githubusercontent.com/u/116686625?s=400&v=4" width="512" height="512" alt="Skeleton Avatar" className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"></img>
+                  </a>
+                </div>
             <h1 className = "text-4xl font-bold tracking-tight dark:text-zinc-800 sm:text-5xl">
               Twin Beds
             </h1>

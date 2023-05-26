@@ -50,7 +50,7 @@ const Navbar = () => {
                   <a href="/coding">Coding</a>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/twinbeds">Twin Beds</a>
+                  <a href="/twinbeds">Music</a>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
                   <a href="/art">Art</a>
@@ -100,7 +100,7 @@ const Navbar = () => {
           Coding
         </NavLink>
         <NavLink to='/twinbeds' activestyle="true">
-          Twin Beds
+          Music
         </NavLink>
         <NavLink to='/art' activestyle="true">
           Art
