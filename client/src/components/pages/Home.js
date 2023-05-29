@@ -9,7 +9,7 @@ const Home = () => {
             <div className = "max-w-2x1">
                 <div className="flex-none columns-2 flex gap-8 justify-center">
                 <div className="flex-none">
-                <a aria-label="Home" className="flex-none"  href="https://github.com/skullkid4200">
+                <a aria-label="Home" className="flex-none bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70"  href="https://github.com/skullkid4200">
                 <img src="https://avatars.githubusercontent.com/u/116686625?s=400&v=4" width="512" height="512" alt="Skeleton Avatar" className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"></img>
                 </a>
                 </div>

@@ -3,22 +3,109 @@ import React from 'react';
 const Writings = () => {
     return (
       <div className="sm:px-8 mt-9">
+        
       <div className="mx-auto-max-w-7xl lg-px-8">
         <div className="relative px-4 sm:px-8 lg:px-12">
           <div className="flex mx-auto max-w-2xl lg:max-w-5x1">
             <div className="max-w-2x1">
-              <div className="columns-2 flex gap-8 justify-center">
-                <div className="flex-none">
+              <div className="columns-2 flex gap-8 justify-center pb-10">
+                <div className="flex-none bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70">
                   <a aria-label="Home" className="" href="https://github.com/skullkid4200">
                     <img src="https://avatars.githubusercontent.com/u/116686625?s=400&v=4" width="512" height="512" alt="Skeleton Avatar" className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"></img>
                   </a>
                 </div>
             <h1 className = "text-4xl font-bold tracking-tight dark:text-zinc-800 sm:text-5xl">
-              Personal Work
+              Written Work
             </h1>
             </div>
+            <div className=" pb-10">
+              <p className="indent-8">While writing code is without a doubt one of the coolest things I've ever sunk my 
+              teeth into, I'd be remiss not to admit that my true passion for the keyboard took hold very early in my life, before I even knew what "code" was. 
+              As a kid I used to come home from school and hop right onto the family PC to open up Microsoft Word so I could write dumb, funny little stories
+               about knights, aliens, superheroes - you name it. 
+              </p>
+              <p className="indent-8 pb-6">
+              Eventually I attended Temple University where I studied journalism at the Klein College of Media & Communication.
+                I had a fantastic experience getting my boots on the ground and exploring the city, navigating areas I otherwise wouldn't
+                have travelled to, just to get that next potential story. I cherished being able to experience the human side of the city and gained a lot of personal perspective
+                as I interviewed fascinating people and learned about how this big crazy city affected their lives, and vice versa.
+                
+              </p>
+              <div>
+              <span className="block h-0.5 w-full bg-gray-600 mb-5"></span>
+              </div>
+              <p className="indent-8">Below you will find samples of my written work from a variety of different places, including my academic work at Temple University,
+              paid freelance work, and my time at an online gaming news outlet. </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify">
+    <div className="text-center">
+      <a href="https://www.gameskinny.com/tips/overwatch-reaper-guide-mastering-the-edgiest-character/">
+        <img className="h-32 w-auto rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/reaper-15843.webp')} alt="">
+    
+    </img>
+    </a><a href="https://www.gameskinny.com/tips/overwatch-reaper-guide-mastering-the-edgiest-character/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Overwatch Reaper Guide: Mastering the Edgiest Character</a></div>
+    <div className="text-center">
+      <a href="https://philadelphianeighborhoods.com/2017/05/16/southwest-philadelphia-local-churches-open-its-doors-to-the-hungry/">
+        <img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/soupkitchen.jpg')} alt="">
+    </img>
+    </a>
+    <a href="https://philadelphianeighborhoods.com/2017/05/16/southwest-philadelphia-local-churches-open-its-doors-to-the-hungry/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Southwest Philadelphia: Local Churches Open Its Doors To The Hungry</a></div>
+    <div className="text-center">
+      <a href="https://tustorytelling.com/2016/11/17/the-rock-and-roll-revolution-comes-roaring-back-to-philly/">
+        <img className="h-32 w-52 rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/billgraham.webp')} alt="">
+    </img>
+    </a><a href="https://tustorytelling.com/2016/11/17/the-rock-and-roll-revolution-comes-roaring-back-to-philly/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">The Rock and Roll Revolution Comes Roaring Back to Philly</a></div>
+    <div className="text-center">
+    <a href="https://www.gameskinny.com/reviews/warcraft-movie-review-spoiler-free/"><img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/warcraft.webp')} alt="">
+    </img>
+    </a><a href="https://www.gameskinny.com/reviews/warcraft-movie-review-spoiler-free/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Warcraft Movie Review [Spoiler Free]</a></div>
+    <div className="text-center">
+    <a href="https://tustorytelling.com/2016/10/06/new-philadelphia-indie-record-label-snack-time-records-quickly-taking-temple-area-by-storm/#more-1825"><img className="h-32 w-48 rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/basement.jpg')} alt="">
+    </img>
+    </a><a href="https://tustorytelling.com/2016/10/06/new-philadelphia-indie-record-label-snack-time-records-quickly-taking-temple-area-by-storm/#more-1825" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">New Philadelphia Indie Record Label “Snack Time Records” Rocks Out in Temple Area</a></div>
+    <div className="text-center">
+    <a href="https://carboncostume.com/billie-joe-armstrong/"><img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/billiejoe.jpg')} alt="">
+    </img>
+    </a><a href="https://carboncostume.com/billie-joe-armstrong/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Billie Joe Armstrong Cosplay Guide</a></div>
+    <div className="text-center">
+    <a href="https://www.gameskinny.com/opinion/dark-souls-i-ii-iii-fromsofts-three-dysfunctional-children/"><img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/darksouls.webp')} alt="">
+    </img>
+    </a><a href="https://www.gameskinny.com/opinion/dark-souls-i-ii-iii-fromsofts-three-dysfunctional-children/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Dark Souls I, II, & III: FROMSOFT's Three Dysfunctional Children</a></div>
+    <div className="text-center">
+    <a href="https://carboncostume.com/jason-voorhees-part-6/"><img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/jason.jpg')} alt="">
+    </img>
+    </a><a href="https://carboncostume.com/jason-voorhees-part-6/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Jason Voorhees (Part 6) Cosplay Guide</a></div>
+    <div className="text-center">
+    <a href="https://www.gameskinny.com/listicle/craziest-things-that-have-happened-because-of-pokemon-go/"><img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/pokemongo.webp')} alt="">
+    </img>
+    </a><a href="https://www.gameskinny.com/listicle/craziest-things-that-have-happened-because-of-pokemon-go/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Pokemon Go!</a></div>
+    <div className="text-center">
+    <a href="https://www.gameskinny.com/listicle/5-best-fantasy-rpgs-youve-never-heard-of-but-should-play/"><img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/rpgs.webp')} alt="">
+    </img>
+    </a><a href="https://www.gameskinny.com/listicle/5-best-fantasy-rpgs-youve-never-heard-of-but-should-play/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">5 Best Fantasy RPG’s You’ve Never Heard of But Should Play</a></div>
+    <div className="text-center">
+    <a href="https://www.gameskinny.com/news/blizzard-responds-to-explosion-of-overwatch-porn/"><img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/rule34.webp')} alt="">
+    </img>
+    </a><a href="https://www.gameskinny.com/news/blizzard-responds-to-explosion-of-overwatch-porn/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Blizzard responds to explosion of Overwatch Porn</a></div>
+    <div className="text-center">
+        <a href="https://carboncostume.com/stan-marsh/"><img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/stan.jpg')} alt="">
+    </img>
+    </a><a href="https://carboncostume.com/stan-marsh/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Stan Marsh Cosplay Guide</a></div>
+    <div className="text-center">
+    <a href="https://carboncostume.com/tetsuo-from-akira/"> <img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/tetsuo.jpg')} alt="">
+    </img>
+    </a><a href="https://carboncostume.com/tetsuo-from-akira/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Tetsuo from Akira Cosplay Guide</a></div>
+    <div className="text-center">
+    <a href="https://www.gameskinny.com/news/world-of-warcraft-private-server-debacle-remains-ongoing/"><img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/wow.webp')} alt="">
+    </img>
+    </a><a href="https://www.gameskinny.com/news/world-of-warcraft-private-server-debacle-remains-ongoing/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">World of Warcraft Private Server Debacle Remains Ongoing</a></div>
+    <div className="text-center">
+    <a href="https://www.gameskinny.com/reviews/this-war-of-mine-the-little-ones-dlc-review/"><img className="h-32 max-w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/warofmine.webp')} alt="">
+    </img>
+    </a><a href="https://www.gameskinny.com/reviews/this-war-of-mine-the-little-ones-dlc-review/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">This War of Mine: The Little Ones DLC Review</a></div>
+</div>
             
-            <div className ="mt-6 flex gap-20 justify-center">
+            <div className ="mt-10 flex gap-20 justify-center">
               <a className ="group -m-1 p-1" ari-label="Follow on Instagram" href="https://www.instagram.com/skull_kid_design/">
                 <svg viewBox="0 0 24 24" ari-hidden="true" className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-700 dark:group-hover:fill-zinc-400">
                   <path d="M12 3c-2.444 0-2.75.01-3.71.054-.959.044-1.613.196-2.185.418A4.412 4.412 0 0 0 4.51 4.511c-.5.5-.809 1.002-1.039 1.594-.222.572-.374 1.226-.418 2.184C3.01 9.25 

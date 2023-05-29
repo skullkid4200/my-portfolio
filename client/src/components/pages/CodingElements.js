@@ -6,7 +6,6 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-left: 60px;
 `;
    
 export const Row = styled.div`

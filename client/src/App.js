@@ -7,7 +7,6 @@ import Coding from "./components/pages/Coding";
 import Contact from "./components/pages/Contact";
 import Home from "./components/pages/Home";
 import Twinbeds from "./components/pages/Twinbeds";
-import Warhammer from "./components/pages/Warhammer";
 import Writings from "./components/pages/Writings";
 
 
@@ -56,7 +55,6 @@ function App() {
             <Route path="/coding" exact element={<Coding />} />
             <Route path="/contact" exact element={<Contact />} />
             <Route path="/twinbeds" exact element={<Twinbeds />} />
-            <Route path="/warhammer" exact element={<Warhammer />} />
             <Route path="/writings" exact element={<Writings />} />
           </Routes>
       </Router>

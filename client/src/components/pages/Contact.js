@@ -2,13 +2,16 @@ import React from 'react';
 
 const Contact = () => {
     return (
-      <div className="sm:px-8 mt-9">
+      
+
+<div class="container  px-6 mx-auto">
+<div className="flex justify-center sm:px-8 mt-9 pb-2">
       <div className="mx-auto-max-w-7xl lg-px-8">
         <div className="relative px-4 sm:px-8 lg:px-12">
           <div className="flex mx-auto max-w-2xl lg:max-w-5x1">
             <div className="max-w-2x1">
               <div className="columns-2 flex gap-8 justify-center">
-                <div className="flex-none">
+                <div className="flex-none bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70">
                   <a aria-label="Home" className="" href="https://github.com/skullkid4200">
                     <img src="https://avatars.githubusercontent.com/u/116686625?s=400&v=4" width="512" height="512" alt="Skeleton Avatar" className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"></img>
                   </a>
@@ -17,8 +20,146 @@ const Contact = () => {
               Contact Me!
             </h1>
             </div>
-            
-            <div className ="mt-6 flex gap-20 justify-center">
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <section class="mb-32 text-gray-800">
+    <div class="flex justify-center">
+      <div class="text-center lg:max-w-3xl md:max-w-xl">
+        <h2 class="text-3xl font-bold mb-12 px-6"></h2>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap">
+      <div class="grow-0 shrink-0 basis-auto mb-12 lg:mb-0 w-full lg:w-5/12 px-3 lg:px-6">
+        <form>
+          <div class="form-group mb-6">
+            <input type="text" class="form-control block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
+              placeholder="Name"></input>
+          </div>
+          <div class="form-group mb-6">
+            <input type="email" class="form-control block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
+              placeholder="Email address"></input>
+          </div>
+          <div class="form-group mb-6">
+            <textarea class="
+            form-control
+            block
+            w-full
+            px-3
+            py-1.5
+            text-base
+            font-normal
+            text-gray-700
+            bg-white bg-clip-padding
+            border border-solid border-gray-300
+            rounded
+            transition
+            ease-in-out
+            m-0
+            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+          " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
+          </div>
+          <div class="form-group form-check text-center mb-6">
+            <input type="checkbox"
+              class="form-check-input  h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-[#2F4550] checked:border-[#2F4550] focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+              id="exampleCheck87"></input>
+            <label class="form-check-label inline-block text-gray-800" for="exampleCheck87">Send me a copy of this
+              message</label>
+          </div>
+          <button type="submit" class="
+          w-full
+          px-6
+          py-2.5
+          bg-blue-600
+          text-white
+          font-medium
+          text-xs
+          leading-tight
+          uppercase
+          rounded
+          shadow-md
+          hover:bg-blue-700 hover:shadow-lg
+          focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-blue-800 active:shadow-lg
+          transition
+          duration-150
+          ease-in-out">Send</button>
+        </form>
+      </div>
+      <div class="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
+        <div class="flex flex-wrap">
+          <div class="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
+            <div class="flex items-start">
+              <div class="shrink-0">
+                <a href="https://github.com/skullkid4200">
+                <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center hover:bg-blue-700 hover:shadow-lg">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="headset" class="w-5 text-white"
+                    role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z">
+                    </path>
+                  </svg>
+                </div>
+                </a>
+              </div>
+              <div class="grow ml-6 pt-4">
+                <a href="https://github.com/skullkid4200" class="font-bold mb-1">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
+            <div class="flex align-start">
+              <div class="shrink-0">
+                <a href="https://www.linkedin.com/in/jack-einhorn-41175777/">
+                <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center hover:bg-blue-700 hover:shadow-lg">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="newspaper"
+                    class="w-5 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path fill="currentColor"
+                      d="M552 64H88c-13.255 0-24 10.745-24 24v8H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h472c26.51 0 48-21.49 48-48V88c0-13.255-10.745-24-24-24zM56 400a8 8 0 0 1-8-8V144h16v248a8 8 0 0 1-8 8zm236-16H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm-208-96H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm0-96H140c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h360c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12z">
+                    </path>
+                  </svg>
+                </div>
+                </a>
+              </div>
+              <div class="grow ml-6 pt-4">
+                <a href="https://www.linkedin.com/in/jack-einhorn-41175777/" class="font-bold mb-1">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div className ="mt-6 flex gap-20 justify-center">
               <a className ="group -m-1 p-1" ari-label="Follow on Instagram" href="https://www.instagram.com/skull_kid_design/">
                 <svg viewBox="0 0 24 24" ari-hidden="true" className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-700 dark:group-hover:fill-zinc-400">
                   <path d="M12 3c-2.444 0-2.75.01-3.71.054-.959.044-1.613.196-2.185.418A4.412 4.412 0 0 0 4.51 4.511c-.5.5-.809 1.002-1.039 1.594-.222.572-.374 1.226-.418 2.184C3.01 9.25 
@@ -42,11 +183,11 @@ const Contact = () => {
                 </svg>
               </a>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+</div>
+
+    
+  
         );
   };
   

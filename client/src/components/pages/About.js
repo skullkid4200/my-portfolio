@@ -9,7 +9,7 @@ export default function Header() {
           <div className="flex mx-auto max-w-2xl lg:max-w-5x1">
             <div className="max-w-2x1">
               <div className="columns-2 flex gap-8 justify-center">
-                <div className="flex-none">
+                <div className="flex-none bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70">
                   <a aria-label="Home" className="" href="https://github.com/skullkid4200">
                     <img src="https://avatars.githubusercontent.com/u/116686625?s=400&v=4" width="512" height="512" alt="Skeleton Avatar" className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"></img>
                   </a>

@@ -13,7 +13,7 @@ const Coding = () => {
           <div className="flex mx-auto max-w-2xl lg:max-w-5x1">
             <div className="max-w-2x1">
               <div className="columns-2 flex gap-8 justify-center">
-                <div className="flex-none">
+                <div className="flex-none bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70">
                   <a aria-label="Home" className="" href="https://github.com/skullkid4200">
                     <img src="https://avatars.githubusercontent.com/u/116686625?s=400&v=4" width="512" height="512" alt="Skeleton Avatar" className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"></img>
                   </a>
@@ -23,6 +23,7 @@ const Coding = () => {
               MERN Web Development
             </h1>
             <h1>
+              
             <h1 className="pt-6">In the fall of 2022, I enrolled in the University of Pennsylvania's EDX Full-Stack Web Developer Bootcamp.
                    I became versed in many useful programs and tools commonly used in the professional world 
                    today, including HTML, CSS, JavaScript, Node, Express, React, SQL, MongoDB, and many other libraries, frameworks, and miscellaneous add-ons. Below you will find links to functional applications developed using the skills I acquired in the bootcamp.  
@@ -37,9 +38,9 @@ const Coding = () => {
             <img src={require('../images/movienight_screenshot.png')} alt="Project 1 Screenshot" className="border-solid border-2 border-blue-500 rounded-lg"/>
             {/* <p className="pb-4 pt-4 m-1">Random Similar Movie Generator</p> */}
             <div className="pb-4 pt-4">
-            <a href="https://github.com/skullkid4200/Atomic-Cats-Project-1" className="text-lg">GitHub Repo</a>
+            <a href="https://github.com/skullkid4200/Atomic-Cats-Project-1" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">GitHub Repo</a>
             </div>
-            <a href="https://skullkid4200.github.io/Random-Similar-Movie-Generator/" className="text-lg">Deployed Application</a>
+            <a href="https://skullkid4200.github.io/Random-Similar-Movie-Generator/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Deployed Application<svg aria-hidden="true" class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
           </section>
           {/* <section>
             <p className="">Group project where the assignment was to create a relatively simple JavaScript application using APIs, local storage, and multiple pages.
@@ -54,9 +55,9 @@ const Coding = () => {
             <img src={require('../images/project2screenshot.png')} alt="Project 2 Screenshot" className="border-solid border-2 border-blue-500 rounded-lg"/>
             {/* <p className="pb-4 pt-4 m-1">A Picnic/Potluck App</p> */}
             <div className="pb-4 pt-4">
-            <a href="https://github.com/miacias/hey-boo-boo" className="text-lg">GitHub Repo</a>
+            <a href="https://github.com/miacias/hey-boo-boo" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">GitHub Repo</a>
             </div>
-            <a href="https://lit-river-34902.herokuapp.com/" className="text-lg">Deployed Application</a>
+            <a href="https://lit-river-34902.herokuapp.com/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Deployed Application<svg aria-hidden="true" class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
           </section>
         </Column>
         <Column className="pt-4">
@@ -65,20 +66,20 @@ const Coding = () => {
             <img src={require('../images/stockhunt.png')} alt="Stock Hunt" className="border-solid border-2 border-blue-500 rounded-lg"/>
             {/* <p className="pb-4 pt-4 m-1">Stock Hunt</p> */}
             <div className="pb-4 pt-4">
-            <a href="https://github.com/JSR5404/Stock-Hunt" className="text-lg">GitHub Repo</a>
+            <a href="https://github.com/JSR5404/Stock-Hunt" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">GitHub Repo</a>
             </div>
-            <a href="https://tranquil-retreat-75935.herokuapp.com/" className="text-lg">Deployed Application</a>
+            <a href="https://tranquil-retreat-75935.herokuapp.com/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Deployed Application<svg aria-hidden="true" class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
           </section>
         </Column>
         <Column className="pt-4">
           <section className="card border-solid border-2 border-zinc-500 rounded-lg">
-            <header className="text-xl pb-2 pt-1 font-medium">Password Generator</header>
+            <header className="text-xl pb-5 pt-5 font-medium">Password Generator</header>
             <img src={require('../images/passwordgenerator.png')} alt="Stock Hunt" className="border-solid border-2 border-blue-500 rounded-lg"/>
             {/* <p className="pb-4 pt-4 m-1">Stock Hunt</p> */}
             <div className="pb-4 pt-4">
-            <a href="https://github.com/skullkid4200/Week-3-Challenge-Password-Gen" className="text-lg">GitHub Repo</a>
+            <a href="https://github.com/skullkid4200/Week-3-Challenge-Password-Gen" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">GitHub Repo</a>
             </div>
-            <a href="https://skullkid4200.github.io/Week-3-Challenge-Password-Gen/" className="text-lg">Deployed Application</a>
+            <a href="https://skullkid4200.github.io/Week-3-Challenge-Password-Gen/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Deployed Application<svg aria-hidden="true" class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
           </section>
         </Column>
       </Row>

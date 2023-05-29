@@ -59,9 +59,6 @@ const Navbar = () => {
                   <a href="/writings">Writings</a>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/warhammer">WARHAMMER 40k</a>
-                </li>
-                <li className="border-b border-gray-400 my-8 uppercase">
                   <a href="/about">About</a>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
@@ -107,9 +104,6 @@ const Navbar = () => {
         </NavLink>
         <NavLink to='/writings' activestyle="true">
           Writings
-        </NavLink>
-        <NavLink to='/warhammer' activestyle="true">
-          WARHAMMER 40k
         </NavLink>
         <NavLink to='/about' activestyle="true">
           About
