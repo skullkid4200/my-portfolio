@@ -1,8 +1,9 @@
-import React from 'react';
+import  React  from 'react';
 
-const Art = () => {
-    return (
-      <div className="sm:px-8 mt-9">
+export default function Header() {
+
+  return (
+    <div className="sm:px-8 mt-9">
       <div className="mx-auto-max-w-7xl lg-px-8">
         <div className="relative px-4 sm:px-8 lg:px-12">
           <div className="flex mx-auto max-w-2xl lg:max-w-5x1">
@@ -14,10 +15,20 @@ const Art = () => {
                   </a>
                 </div>
             <h1 className = "text-4xl font-bold tracking-tight dark:text-zinc-800 sm:text-5xl">
-              Graphic Design
+              About
             </h1>
             </div>
-            
+            <div className=" pb-10 pt-6">
+              <p className="indent-8">This page coming soon. 
+              </p>
+              <p className="indent-8 pb-6">
+              
+                
+              </p>
+              <div>
+
+              </div>
+              </div>
             <div className ="mt-6 flex gap-20 justify-center">
               <a className ="group -m-1 p-1" ari-label="Follow on Instagram" href="https://www.instagram.com/skull_kid_design/">
                 <svg viewBox="0 0 24 24" ari-hidden="true" className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-700 dark:group-hover:fill-zinc-400">
@@ -47,7 +58,5 @@ const Art = () => {
       </div>
     </div>
   </div>
-        );
-  };
-  
-        export default Art;
+  );
+}

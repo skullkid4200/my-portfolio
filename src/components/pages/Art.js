@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Twinbeds = () => {
+const Art = () => {
     return (
       <div className="sm:px-8 mt-9">
       <div className="mx-auto-max-w-7xl lg-px-8">
@@ -14,10 +14,20 @@ const Twinbeds = () => {
                   </a>
                 </div>
             <h1 className = "text-4xl font-bold tracking-tight dark:text-zinc-800 sm:text-5xl">
-              Twin Beds
+              Graphic Design
             </h1>
             </div>
-            
+            <div className=" pb-10 pt-6">
+              <p className="indent-8">This page coming soon. 
+              </p>
+              <p className="indent-8 pb-6">
+              
+                
+              </p>
+              <div>
+
+              </div>
+              </div>
             <div className ="mt-6 flex gap-20 justify-center">
               <a className ="group -m-1 p-1" ari-label="Follow on Instagram" href="https://www.instagram.com/skull_kid_design/">
                 <svg viewBox="0 0 24 24" ari-hidden="true" className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-700 dark:group-hover:fill-zinc-400">
@@ -50,4 +60,4 @@ const Twinbeds = () => {
         );
   };
   
-        export default Twinbeds;
+        export default Art;

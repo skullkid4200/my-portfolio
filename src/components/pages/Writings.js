@@ -20,7 +20,7 @@ const Writings = () => {
             </div>
             <div className=" pb-10">
               <p className="indent-8">While writing code is without a doubt one of the coolest things I've ever sunk my 
-              teeth into, I'd be remiss not to admit that my true passion for the keyboard took hold very early in my life, before I even knew what "code" was. 
+              teeth into, I'd be remiss to not mention that my true passion for the keyboard took hold very early in my life, before I even knew what "code" was. 
               As a kid I used to come home from school and hop right onto the family PC to open up Microsoft Word so I could write dumb, funny little stories
                about knights, aliens, superheroes - you name it. 
               </p>
