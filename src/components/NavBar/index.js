@@ -44,7 +44,7 @@ const Navbar = () => {
               </div>
               <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/">Home</a>
+                  <a href="/home">Home</a>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
                   <a href="/coding">Coding</a>
@@ -90,7 +90,7 @@ const Navbar = () => {
     `}</style>
       </div>
       <NavMenu className="font-mono">
-        <NavLink to='/' activestyle="true">
+        <NavLink to='/home' activestyle="true">
           Home
         </NavLink>
         <NavLink to='/coding' activestyle="true">
