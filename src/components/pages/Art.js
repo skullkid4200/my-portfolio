@@ -17,17 +17,37 @@ const Art = () => {
               Graphic Design
             </h1>
             </div>
-            <div className=" pb-10 pt-6">
-              <p className="indent-8">This page coming soon. 
+            <div className=" pb-10">
+              <p className="indent-8">Art Stuff
               </p>
               <p className="indent-8 pb-6">
-              
-                
+              More Art Stuff
               </p>
               <div>
+              <span className="block h-0.5 w-full bg-gray-600 mb-5"></span>
+              </div>
+              <p className="indent-8">Below you will find samples of my artwork. </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-4 justify">
+    <div className="flex justify-center">
+      
+        <img className="h-full w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/reaper-15843.webp')} alt="">
+    
+    </img>
+     </div>
+    <div className="flex justify-center">
+      
+        <img className="h-full w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/soupkitchen.jpg')} alt="">
+    </img>
+    
+     </div>
+    <div className="flex justify-center">
+      
+        <img className="h-full w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/billgraham.webp')} alt="">
+    </img>
+    </div>
+  </div>
 
-              </div>
-              </div>
             <div className ="mt-6 flex gap-20 justify-center">
               <a className ="group -m-1 p-1" ari-label="Follow on Instagram" href="https://www.instagram.com/skull_kid_design/">
                 <svg viewBox="0 0 24 24" ari-hidden="true" className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-700 dark:group-hover:fill-zinc-400">

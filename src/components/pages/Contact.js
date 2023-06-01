@@ -1,6 +1,25 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+  const form = useRef();              
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    document.querySelector('form');
+    emailjs.sendForm('service_hh5434s', 'contact_form', form.current, 'RoHN7yfV2pZk9e0GV')
+      .then((result) => {
+          
+        document.querySelector('form').innerHTML = `
+            <h1>Thanks so much for your message! I'll reach out to you shortly.</h1>
+        `;
+        document.querySelector('form');
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
     return (
       
 
@@ -34,9 +53,9 @@ const Contact = () => {
 
     <div class="flex flex-wrap">
       <div class="grow-0 shrink-0 basis-auto mb-12 lg:mb-0 w-full lg:w-5/12 px-3 lg:px-6">
-        <form>
+        <form ref={form}>
           <div class="form-group mb-6">
-            <input type="text" class="form-control block
+            <input type="text" name="name" class="form-control block
             w-full
             px-3
             py-1.5
@@ -53,7 +72,7 @@ const Contact = () => {
               placeholder="Name"></input>
           </div>
           <div class="form-group mb-6">
-            <input type="email" class="form-control block
+            <input type="email" name="email" class="form-control block
             w-full
             px-3
             py-1.5
@@ -70,7 +89,7 @@ const Contact = () => {
               placeholder="Email address"></input>
           </div>
           <div class="form-group mb-6">
-            <textarea class="
+            <textarea name="message" class="
             form-control
             block
             w-full
@@ -88,14 +107,14 @@ const Contact = () => {
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
           " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
           </div>
-          <div class="form-group form-check text-center mb-6">
+          {/* <div class="form-group form-check text-center mb-6">
             <input type="checkbox"
               class="form-check-input  h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-[#2F4550] checked:border-[#2F4550] focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
               id="exampleCheck87"></input>
             <label class="form-check-label inline-block text-gray-800" for="exampleCheck87">Send me a copy of this
               message</label>
-          </div>
-          <button type="submit" class="
+          </div> */}
+          <button onClick={sendEmail} type="submit" class="
           w-full
           px-6
           py-2.5
