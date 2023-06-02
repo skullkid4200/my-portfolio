@@ -17,7 +17,19 @@ const Art = () => {
               Graphic Design
             </h1>
             </div>
-            <div className=" pb-10">
+            <div className=" pb-10 pt-6">
+              <p className="indent-8">This page coming soon. 
+              </p>
+              <p className="indent-8 pb-6">
+              
+                
+              </p>
+              <div>
+
+              </div>
+              </div>
+
+            {/* <div className=" pb-10">
               <p className="indent-8">Art Stuff
               </p>
               <p className="indent-8 pb-6">
@@ -46,7 +58,7 @@ const Art = () => {
         <img className="h-full w-full rounded-lg bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70" img src={require('../images/billgraham.webp')} alt="">
     </img>
     </div>
-  </div>
+  </div> */}
 
             <div className ="mt-6 flex gap-20 justify-center">
               <a className ="group -m-1 p-1" ari-label="Follow on Instagram" href="https://www.instagram.com/skull_kid_design/">
