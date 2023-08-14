@@ -39,6 +39,11 @@ const Contact = () => {
               Contact Me!
             </h1>
             </div>
+            <div>
+            <h3 className="pt-5">Feel free to use the contact form, or email me directly at: 
+            </h3>
+            <h3 className="flex justify-center font-bold">jackeinhorndesign@gmail.com</h3>
+            </div>
             </div>
             </div>
           </div>

@@ -13,8 +13,8 @@ const Coding = () => {
           <div className="flex mx-auto max-w-2xl lg:max-w-5x1">
             <div className="max-w-2x1">
               <div className="columns-2 flex gap-8 justify-center">
-                <div className="flex-none bg-fixed opacity-100 transition duration-300 ease-in-out hover:opacity-70">
-                  <a aria-label="Home" className="" href="https://github.com/skullkid4200">
+                <div className="flex-none bg-fixed">
+                  <a aria-label="Home" className="opacity-100 transition duration-300 ease-in-out hover:opacity-70" href="https://github.com/skullkid4200">
                     <img src="https://avatars.githubusercontent.com/u/116686625?s=400&v=4" width="512" height="512" alt="Skeleton Avatar" className="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"></img>
                   </a>
                 </div>
@@ -29,12 +29,20 @@ const Coding = () => {
                    today, including HTML, CSS, JavaScript, Node, Express, React, SQL, MongoDB, and many other libraries, frameworks, and miscellaneous add-ons. Below you will find links to functional applications developed using the skills I acquired in the bootcamp.  
                    </h1>
             </h1>
+            
             </div>
+            
             </div>
-            <Row className="pt-6">
-        <Column className="pt-4">
+            
+            
+        
+              
+        <Column className="pt-20">
           <section className="card border-solid border-2 border-zinc-500 rounded-lg">
-            <header className="text-xl pb-2 pt-1 font-medium">Similar Movie Generator</header>
+            <header className="text-xl pt-5 font-medium">Similar Movie Generator</header>
+            <p className ="pb-5 pt-5">Group project where the assignment was to create a relatively simple JavaScript application using APIs, local storage, and multiple pages.
+            Simply type in the title of a movie and the string will be processed through 2 different movie database APIs and then return you 3 YouTube trailers for similar movies via the Google API. Movies are defined as "similar" via their IMDB genre designations.
+            My areas of focus on this product were primarily the API functions and local storage logic.</p>
             <img src={require('../images/movienight_screenshot.png')} alt="Project 1 Screenshot" className="border-solid border-2 border-blue-500 rounded-lg"/>
             {/* <p className="pb-4 pt-4 m-1">Random Similar Movie Generator</p> */}
             <div className="pb-4 pt-4">
@@ -42,16 +50,11 @@ const Coding = () => {
             </div>
             <a href="https://skullkid4200.github.io/Random-Similar-Movie-Generator/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Deployed Application<svg aria-hidden="true" class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
           </section>
-          {/* <section>
-            <p className="">Group project where the assignment was to create a relatively simple JavaScript application using APIs, local storage, and multiple pages.
-            Simply type in the title of a movie and the string will be processed through 2 different movie database APIs and then return you 3 YouTube trailers for similar movies via the Google API. Movies are defined as "similar" via their IMDB genre designations.
-            My areas of focus on this product were primarily the API functions and local storage logic. 
-            </p>
-          </section> */}
-        </Column>
-        <Column className="pt-4">
+          
+          <div className="pt-20">
           <section className="card border-solid border-2 border-zinc-500 rounded-lg">
-            <header className="text-xl pb-5 pt-5 font-medium">Hey Boo-Boo!</header>
+            <header className="text-xl pt-5 font-medium">Hey Boo-Boo!</header>
+            <p className ="pb-5 pt-5">Group project where the goal was to create a social event planning app in which users can create an event, invite others, and declare what they are bringing in a forum-like format. The app was made using JavaScript and HandleBars JS to arrange the pages. Users can create accounts for logging in/out, which are stored in our SQL database. Express was used to set up the server and Bootsrap was used for the design aspects. Because this is an event-planning app, we connected to both the Google Calendar and Google Maps APIs.  .</p>
             <img src={require('../images/project2screenshot.png')} alt="Project 2 Screenshot" className="border-solid border-2 border-blue-500 rounded-lg"/>
             {/* <p className="pb-4 pt-4 m-1">A Picnic/Potluck App</p> */}
             <div className="pb-4 pt-4">
@@ -59,10 +62,17 @@ const Coding = () => {
             </div>
             <a href="https://lit-river-34902.herokuapp.com/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Deployed Application<svg aria-hidden="true" class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
           </section>
-        </Column>
-        <Column className="pt-4">
+          </div>
+        
+          <div className="pt-20">
           <section className="card border-solid border-2 border-zinc-500 rounded-lg">
-            <header className="text-xl pb-5 pt-5 font-medium">Stock Hunt</header>
+            <header className="text-xl pt-5 font-medium">Stock Hunt</header>
+            <p className ="pb-5 pt-5">Another group project. For this app we essentially wanted to remake the stock-trading app RobinHood, with the caveat it would be a mock version, and serve best in classrooms or other educational settings so that users can trade stocks without using real money.
+            The app is made with JavaScript and utilizes React as the main tool for building the website. This time we used MongoDB instead of SQL, in conjunction with Apollo JS and GraphQL. My main contributions to this project
+            were the design of the site itself via Tailwind CSS, all navigation functionality via React, and the log in/logout 
+            functionalities and how they interacted with the database. I am definitely proud to say that while working on this project, 
+            I became well-versed enough in Tailwind that I was able to continue developing my skills and eventually make
+            the portfolio site that you are currently looking at.</p>
             <img src={require('../images/stockhunt.png')} alt="Stock Hunt" className="border-solid border-2 border-blue-500 rounded-lg"/>
             {/* <p className="pb-4 pt-4 m-1">Stock Hunt</p> */}
             <div className="pb-4 pt-4">
@@ -70,10 +80,12 @@ const Coding = () => {
             </div>
             <a href="https://tranquil-retreat-75935.herokuapp.com/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Deployed Application<svg aria-hidden="true" class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
           </section>
-        </Column>
-        <Column className="pt-4">
+        </div>
+        
+        <div className="pt-20">
           <section className="card border-solid border-2 border-zinc-500 rounded-lg">
-            <header className="text-xl pb-5 pt-5 font-medium">Password Generator</header>
+            <header className="text-xl pt-5 font-medium">Password Generator</header>
+            <p className ="pb-5 pt-5">My first real code project, this was a very simple app utilizing a tiny bit of JavaScript in order to generate a fully random password. Users will hit "generate password" and be met with customizable options for the parameters of length, uppercase letters, numbers, and special characters.</p>
             <img src={require('../images/passwordgenerator.png')} alt="Stock Hunt" className="border-solid border-2 border-blue-500 rounded-lg"/>
             {/* <p className="pb-4 pt-4 m-1">Stock Hunt</p> */}
             <div className="pb-4 pt-4">
@@ -81,8 +93,9 @@ const Coding = () => {
             </div>
             <a href="https://skullkid4200.github.io/Week-3-Challenge-Password-Gen/" className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">Deployed Application<svg aria-hidden="true" class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
           </section>
+          </div>
         </Column>
-      </Row>
+      
             {/* <div>
             <div className="flex justify-center columns-5 pt-20 px-4 sm:px-8 lg:px-12">
                   <div className="bg-zinc-900 w-12 h-12">
