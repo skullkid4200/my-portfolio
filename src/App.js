@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/NavBar/index";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import About from "./components/pages/About";
 import Art from "./components/pages/Art";
 import Coding from "./components/pages/Coding";
@@ -46,17 +46,19 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-          <Navbar />
-          
-          <Routes>
-            <Route path="/portfolio2" exact element={<Home />} />
-            <Route path="/about" exact element={<About />} />
-            <Route path="/art" exact element={<Art />} />
-            <Route path="/coding" exact element={<Coding />} />
-            <Route path="/contact" exact element={<Contact />} />
-            <Route path="/twinbeds" exact element={<Twinbeds />} />
-            <Route path="/writings" exact element={<Writings />} />
-          </Routes>
+        <Navbar />
+
+        <Routes>
+          <Route path="/my-portfolio" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/art" element={<Art />} />
+          <Route path="/coding" element={<Coding />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/twinbeds" element={<Twinbeds />} />
+          <Route path="/writings" element={<Writings />} />
+          {/* Fallback Route */}
+          <Route path="*" element={<Navigate to="/my-portfolio" />} />
+        </Routes>
       </Router>
     </ApolloProvider>
   );
