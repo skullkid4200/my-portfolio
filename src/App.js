@@ -49,7 +49,7 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/my-portfolio" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/art" element={<Art />} />
           <Route path="/coding" element={<Coding />} />
@@ -57,7 +57,7 @@ function App() {
           <Route path="/twinbeds" element={<Twinbeds />} />
           <Route path="/writings" element={<Writings />} />
           {/* Fallback Route */}
-          <Route path="*" element={<Navigate to="/my-portfolio" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
     </ApolloProvider>

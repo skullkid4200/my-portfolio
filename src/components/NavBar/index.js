@@ -44,7 +44,7 @@ const Navbar = () => {
               </div>
               <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                 <li className="border-b border-gray-400 my-8 uppercase">
-                  <a href="/my-portfolio">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li className="border-b border-gray-400 my-8 uppercase">
                   <a href="/coding">Coding</a>
